@@ -186,6 +186,7 @@ public class Main {
 		return Entrada.leerInt(" 0. Eixir \n " + "1. Añadir producto al carrito \n " + "2. Calcular importe total \n"
 				+ " 3. Mostrar por marca \n " + "4. Mostrar productos (Exception) \n "
 				+ "5. Eliminar el primer producto de forma absoleta \n "
+				+ " 6. Escribir csv \n "
 				+ "---------------------------------------- \n ");
 
 	}
