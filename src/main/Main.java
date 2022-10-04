@@ -58,11 +58,9 @@ public class Main {
 			i++;
 		}
 		if (producto != null) {
-			// carrito.forEach( n -> if(n.getMarca().equalsIgnoreCase(marca)
-			// {System.out.println(n)});
+			
 
 			carrito.stream().filter((a) -> a.getMarca().equalsIgnoreCase(marca)).forEach((n) -> System.out.println(n));
-			// (s , carrito) -> {if(s.getMarca().equalsIgnoreCase(n));}
 
 		} else {
 			System.out.println("no tienes productos de esa marca");
@@ -93,7 +91,7 @@ public class Main {
 			double precio = Entrada.leerDouble("Introduce el precio");
 			int cantidad = Entrada.leerInt("Cuántos deseas?");
 
-			Producto producto1 = new Producto(nom, marca, precio, cantidad);
+			Producto producto1 = new Producto(marca, nom, precio, cantidad);
 			carrito.add(producto1);
 		}
 		System.out.println("añadido correctamente");
